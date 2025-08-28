@@ -26,7 +26,7 @@ export function Footer() {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:hiramcastillo36@gmail.com">
+              <a href="mailto:hiramcastg@gmail.com">
                 <Mail className="w-5 h-5" />
                 <span className="sr-only">Email</span>
               </a>
@@ -36,7 +36,6 @@ export function Footer() {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">© 2025 Hiram Jalil Castillo Gutierrez. All rights reserved.</p>
-          <p className="text-xs text-muted-foreground mt-2">Built with Next.js, TypeScript, and Tailwind CSS</p>
         </div>
       </div>
     </footer>

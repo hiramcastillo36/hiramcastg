@@ -15,20 +15,13 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 opacity-0 animate-slide-in-left animate-delay-200">
             <p className="text-muted-foreground leading-relaxed">
-              I'm a dedicated Backend Developer and Software Engineer with extensive experience in building robust,
-              scalable systems. Currently working at Ixmatix Robotics, where I've successfully optimized GraphQL APIs,
-              achieving a 65% improvement in response times and implementing efficient database architectures.
+              I'm a Backend Developer with experience building scalable systems. I work at Ixmatix Robotics, where I've optimized GraphQL APIs and improved response times by 65%.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              My expertise spans from high-performance computing systems administration to full-stack development, with
-              a strong focus on backend technologies. I'm passionate about solving complex technical challenges and have
-              experience managing Kubernetes clusters with 10+ GPUs and 250GB+ RAM for advanced scientific computing
-              projects.
+              My experience includes both backend and frontend development, with a focus on server-side technologies. I enjoy solving complex technical problems and have experience managing Kubernetes clusters for advanced computing projects.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Beyond professional work, I've competed in programming contests including ICPC Mexico Finals (48th place)
-              and led robotics teams to national recognition, demonstrating both technical skills and leadership
-              capabilities.
+              I've also competed in programming contests like ICPC Mexico Finals and led robotics teams to national recognition.
             </p>
           </div>
 
@@ -56,20 +49,6 @@ export function AboutSection() {
                   <div>
                     <h3 className="font-semibold text-foreground">Database Design</h3>
                     <p className="text-sm text-muted-foreground">PostgreSQL optimization and database architecture</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="opacity-0 animate-scale-in animate-delay-500 hover:scale-105 transition-transform duration-200">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
-                    <Cloud className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">System Administration</h3>
-                    <p className="text-sm text-muted-foreground">Kubernetes, Docker, and HPC systems management</p>
                   </div>
                 </div>
               </CardContent>

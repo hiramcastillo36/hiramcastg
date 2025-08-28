@@ -1,74 +1,77 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, ExternalLink, Database, Zap, Cloud, Code } from "lucide-react"
+import { Github, ExternalLink, Database, Zap, Cloud, Code, Globe } from "lucide-react"
 
 export function ProjectsSection() {
   const projects = [
     {
-      title: "GraphQL API Optimization Platform",
-      description:
-        "High-performance GraphQL API built with Elixir and Absinthe, featuring advanced query optimization and N+1 problem resolution. Achieved 65% improvement in response times through strategic caching and database query optimization.",
-      technologies: ["Elixir", "Phoenix", "GraphQL", "Absinthe", "PostgreSQL", "Redis"],
+      title: "AbsintheInitializer",
+      description: "Mix task that automates the setup of a GraphQL API using Absinthe in Phoenix/Elixir projects. Simplifies Absinthe integration, routing, and optional authentication.",
       features: [
-        "Advanced query optimization and caching",
-        "N+1 problem resolution",
-        "Real-time subscriptions",
-        "Comprehensive API documentation",
+        "Automates Absinthe and dependency setup",
+        "Configures routes for GraphQL and GraphiQL",
+        "Optionally adds user authentication",
+        "Generates schema, mutations, queries, and types for GraphQL"
       ],
-      icon: <Zap className="w-6 h-6" />,
-      github: "https://github.com/hiramcastillo36",
-      demo: "#",
+      technologies: ["Elixir", "Phoenix", "Absinthe", "GraphQL"],
+      github: "https://github.com/hiramcastillo36/absinthe_initializer",
+      icon: <Database className="w-6 h-6 text-primary" />
     },
     {
-      title: "Distributed System Architecture",
-      description:
-        "Scalable microservices architecture designed for high-availability applications. Implemented using containerization and orchestration technologies with comprehensive monitoring and logging systems.",
-      technologies: ["Docker", "Kubernetes", "PostgreSQL", "Redis", "Nginx", "Prometheus"],
+      title: "RCJ-Simulator",
+      description: "Robot trajectory simulator for RoboCup Soccer using Bézier curves to avoid obstacles and reach targets. Uses OpenGL and GLM for visualization.",
       features: [
-        "Kubernetes-based orchestration",
-        "Load balancing and auto-scaling",
-        "Centralized logging and monitoring",
-        "High availability design",
+        "Simulates robot movement with Bézier curves",
+        "Trajectory planning avoiding obstacles",
+        "Visualization with OpenGL and GLM"
       ],
-      icon: <Cloud className="w-6 h-6" />,
-      github: "https://github.com/hiramcastillo36",
-      demo: "#",
+      technologies: ["C++", "OpenGL", "GLM"],
+      github: "https://github.com/hiramcastillo36/RCJ-Simulator",
+      icon: <Code className="w-6 h-6 text-primary" />
     },
     {
-      title: "Real-time Data Processing Pipeline",
-      description:
-        "Robust data processing system built with Python and Django, featuring real-time analytics and automated reporting. Integrates with external APIs and provides comprehensive data visualization.",
-      technologies: ["Python", "Django", "PostgreSQL", "Redis", "Celery", "REST API"],
+      title: "Bear and Bees C",
+      description: "Multiple Producers and One Consumer synchronization problem using Semaphores. N bees produce honey and a bear consumes it when the jar is full. Demonstrates concurrent programming in C.",
       features: [
-        "Real-time data processing",
-        "Automated report generation",
-        "External API integrations",
-        "Comprehensive analytics dashboard",
+        "Implements producer-consumer synchronization with semaphores",
+        "Randomized number of bees and jar capacity",
+        "Infinite honey production and consumption loop"
       ],
-      icon: <Database className="w-6 h-6" />,
-      github: "https://github.com/hiramcastillo36",
-      demo: "#",
+      technologies: ["C", "Semaphores", "Concurrency"],
+      github: "https://github.com/hiramcastillo36/bear-and-bees-c",
+      icon: <Zap className="w-6 h-6 text-primary" />
     },
     {
-      title: "HPC Cluster Management System",
-      description:
-        "Advanced system for managing high-performance computing resources, including GPU allocation, job scheduling, and resource monitoring. Built for scientific computing applications with 10+ GPUs and 250GB+ RAM.",
-      technologies: ["Kubernetes", "Docker", "Python", "Linux", "GPU Computing", "Monitoring"],
+      title: "PIG: Platform for Research with GPUs",
+      description: "PIG is an inter-institutional initiative by the Supercomputing Community within CUDI, aggregating GPU infrastructure from various Mexican institutions into a single, container-based platform for secure and easy resource sharing. Its main objective is to provide students and researchers access to advanced computing tools, promote collaboration, and optimize resource utilization. In its pilot phase, PIG deployed a Kubernetes cluster with infrastructure from UNAM, UDG, and UAEMEX, offering 10+ GPUs, 80+ CPUs, 250GB+ RAM, and 5TB storage. The next steps involve expanding capacity and incorporating more institutions and users.",
       features: [
-        "GPU resource allocation",
-        "Job scheduling and queuing",
-        "Performance monitoring",
-        "Scientific computing optimization",
+        "Aggregates GPU resources from multiple institutions",
+        "Secure, container-based platform for resource sharing",
+        "Kubernetes cluster with multi-institution nodes",
+        "Supports development, debugging, and testing of parallel GPU applications"
       ],
-      icon: <Code className="w-6 h-6" />,
-      github: "https://github.com/hiramcastillo36",
-      demo: "#",
+      technologies: ["Kubernetes", "Linux System Administration", "Docker"],
+      github: "https://github.com/cudi-community/pig-platform",
+      icon: <Cloud className="w-6 h-6 text-primary" />
     },
-  ]
+    {
+      title: "Ecotide: 3D Ocean and Phytoplankton Visualization",
+      description: "Ecotide is a web platform developed with Next.js, TypeScript, and Tailwind CSS, deployed on Vercel. It features a Model Viewer library for real-time 3D model rendering, allowing users to explore detailed information about the ocean and phytoplankton with immersive visuals and ocean sounds. Project for NASA Space Apps Ocean Garden Challenge.",
+      features: [
+        "Web platform for 3D ocean and phytoplankton visualization",
+        "Real-time 3D model rendering with Model Viewer",
+        "Immersive ocean sounds and interactive exploration",
+        "Developed for NASA Space Apps Ocean Garden Challenge"
+      ],
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+      github: "https://github.com/alancasre133/Nasaoceangarden",
+      icon: <Globe className="w-6 h-6 text-primary" />
+    },
+  ];
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-20 px-4 bg-slate-50/40 dark:bg-slate-900/20">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Featured Projects</h2>
@@ -115,12 +118,6 @@ export function ProjectsSection() {
                       <a href={project.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4 mr-2" />
                         Code
-                      </a>
-                    </Button>
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Demo
                       </a>
                     </Button>
                   </div>

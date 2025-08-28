@@ -56,22 +56,10 @@ export function ContactSection() {
                   <div>
                     <p className="font-medium text-foreground">Email</p>
                     <a
-                      href="mailto:hiramcastillo36@gmail.com"
+                      href="mailto:hiramcastg@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      hiramcastillo36@gmail.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 bg-primary/10 rounded-lg">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground">Phone</p>
-                    <a href="tel:+524448485448" className="text-muted-foreground hover:text-primary transition-colors">
-                      +52 444 848 5448
+                      hiramcastg@gmail.com
                     </a>
                   </div>
                 </div>

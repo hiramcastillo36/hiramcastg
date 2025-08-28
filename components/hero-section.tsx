@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, Download } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="pt-32 pb-20 px-4">
+    <section className="pt-32 pb-20 px-4 bg-slate-50/50 dark:bg-slate-900/30">
       <div className="container mx-auto max-w-4xl text-center">
         <div className="mb-8 opacity-0 animate-fade-in-up">
           <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-4xl font-bold text-primary-foreground animate-pulse-glow">
@@ -59,7 +59,7 @@ export function HeroSection() {
             </a>
           </Button>
           <Button variant="ghost" size="icon" asChild className="hover:scale-110 transition-transform duration-200">
-            <a href="mailto:hiramcastillo36@gmail.com">
+            <a href="mailto:hiramcastg@gmail.com">
               <Mail className="w-5 h-5" />
               <span className="sr-only">Email</span>
             </a>

@@ -5,37 +5,44 @@ import { CalendarDays, MapPin } from "lucide-react"
 export function ExperienceSection() {
   const experiences = [
     {
-      title: "Full Stack Developer",
-      company: "Ixmatix Robotics",
+      title: "Backend Developer",
+      company: "IXMATIX",
       location: "Remote",
-      period: "March 2021 - Present",
+      period: "Aug 2023 – Present · 2 years 1 month",
       achievements: [
-        "Implemented GraphQL API using Absinthe, optimizing performance and resolving N+1 errors, resulting in 65% improvement in response time",
-        "Developed and designed PostgreSQL databases with proper normalization forms to optimize development workflows",
-        "Consumed external APIs for internal tools development and process automation using OTP for enhanced efficiency",
-        "Implemented Apollo Client for GraphQL API consumption, effectively integrating user interfaces",
-        "Developed web applications using Django, TypeScript, and Next.js with focus on intuitive user experiences",
+        "Implemented a GraphQL API using Absinthe, optimizing the API and resolving the N+1 error, resulting in a 50% improvement in response time.",
+        "Developed and designed PostgreSQL databases, ensuring project requirements were met and applying normalization forms to optimize development.",
+        "Consumed external APIs for the development of internal tools and automation of processes, utilizing OTP to enhance efficiency and reliability."
       ],
-      technologies: ["Elixir", "GraphQL", "PostgreSQL", "Django", "TypeScript", "Next.js", "Apollo Client"],
+      technologies: ["Elixir", "GraphQL", "PostgreSQL", "OTP", "API Integration"],
     },
     {
       title: "HPC Systems Administrator",
-      company: "Corporación Universitaria para el Desarrollo de Internet",
+      company: "Corporación Universitaria para el Desarrollo de Internet A. C.",
       location: "Remote",
-      period: "January 2024 - December 2024",
+      period: "Jan 2024 – Aug 2025 · 1 year 8 months",
       achievements: [
-        "Managed PIG (Platform for GPU Research) as part of CUDI's Supercomputing Community collaborative project",
-        "Administered Kubernetes-based cluster with 10+ GPUs, 80+ CPUs, and 250GB+ RAM",
-        "Ensured optimal system performance and delivered technical support to researchers for advanced scientific projects",
-        "Implemented monitoring and maintenance protocols for high-availability computing infrastructure",
+        "HPC System Administrator at PIG (Platform for GPU Research), overseeing a collaborative project within CUDI's Supercomputing Community.",
+        "Managed a Kubernetes-based cluster with 10+ GPUs, 80+ CPUs, 250GB+ RAM, ensuring optimal performance and providing technical support for researchers leveraging the platform for advanced scientific projects."
       ],
-      technologies: ["Kubernetes", "Docker", "Linux", "GPU Computing", "System Monitoring"],
+      technologies: ["Kubernetes", "Linux System Administration", "Docker", "GPU Computing"],
     },
-  ]
+    {
+      title: "Backend Developer",
+      company: "CatapultaAcademy",
+      location: "Remote",
+      period: "Mar 2021 – Aug 2023 · 2 years 6 months",
+      achievements: [
+        "Developed web applications using GraphQL and Phoenix Framework.",
+        "Contributed to multiple internal and client-facing projects."
+      ],
+      technologies: ["GraphQL", "Phoenix Framework", "Web Development"],
+    },
+  ];
 
   return (
-    <section id="experience" className="py-20 px-4">
-      <div className="container mx-auto max-w-4xl">
+    <section id="experience" className="py-20 px-4 bg-blue-50/30 dark:bg-blue-950/20">
+      <div className="container-fluid">
         <div className="text-center mb-16 opacity-0 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Professional Experience</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
@@ -43,11 +50,11 @@ export function ExperienceSection() {
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="flex flex-col md:flex-row md:space-x-8 md:space-y-0 space-y-8 justify-center">
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className={`border-l-4 border-l-primary opacity-0 animate-fade-in-up hover:shadow-lg transition-shadow duration-300 ${
+              className={`flex-1 md:max-w-md border-l-4 border-l-primary opacity-0 animate-fade-in-up hover:shadow-lg transition-shadow duration-300 ${
                 index === 0 ? "animate-delay-200" : "animate-delay-400"
               }`}
             >
