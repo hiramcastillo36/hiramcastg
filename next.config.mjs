@@ -10,7 +10,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: isProd ? 'export' : 'standalone',
+  output: 'export',
   assetPrefix: isProd ? '/hiramcastg/' : '',
   basePath: isProd ? '/hiramcastg' : '',
 }
