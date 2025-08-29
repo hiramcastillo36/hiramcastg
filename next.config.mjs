@@ -10,9 +10,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
-  assetPrefix: isProd ? '/hiramcastg/' : '',
-  basePath: isProd ? '/hiramcastg' : '',
 }
 
 export default nextConfig
