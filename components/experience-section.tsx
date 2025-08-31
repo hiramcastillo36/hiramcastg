@@ -5,10 +5,19 @@ import { CalendarDays, MapPin } from "lucide-react"
 export function ExperienceSection() {
   const experiences = [
     {
+        title: "Backend Developer",
+        company: "Pefai",
+        location: "Remote",
+        period: "Aug 2025 – Present",
+        achievements: [
+        ],
+        technologies: ["Go", "Java", "Spring Boot", "MongoDB", "Microservices", "Azure SQL"],
+    },
+    {
       title: "Backend Developer",
       company: "IXMATIX",
       location: "Remote",
-      period: "Aug 2023 – Present · 2 years 1 month",
+      period: "Aug 2023 – Aug 2025",
       achievements: [
         "Implemented a GraphQL API using Absinthe, optimizing the API and resolving the N+1 error, resulting in a 50% improvement in response time.",
         "Developed and designed PostgreSQL databases, ensuring project requirements were met and applying normalization forms to optimize development.",
@@ -20,9 +29,8 @@ export function ExperienceSection() {
       title: "HPC Systems Administrator",
       company: "Corporación Universitaria para el Desarrollo de Internet A. C.",
       location: "Remote",
-      period: "Jan 2024 – Aug 2025 · 1 year 8 months",
+      period: "Jan 2024 – Aug 2025",
       achievements: [
-        "HPC System Administrator at PIG (Platform for GPU Research), overseeing a collaborative project within CUDI's Supercomputing Community.",
         "Managed a Kubernetes-based cluster with 10+ GPUs, 80+ CPUs, 250GB+ RAM, ensuring optimal performance and providing technical support for researchers leveraging the platform for advanced scientific projects."
       ],
       technologies: ["Kubernetes", "Linux System Administration", "Docker", "GPU Computing"],
@@ -31,7 +39,7 @@ export function ExperienceSection() {
       title: "Backend Developer",
       company: "CatapultaAcademy",
       location: "Remote",
-      period: "Mar 2021 – Aug 2023 · 2 years 6 months",
+      period: "Mar 2021 – Aug 2023",
       achievements: [
         "Developed web applications using GraphQL and Phoenix Framework.",
         "Contributed to multiple internal and client-facing projects."
